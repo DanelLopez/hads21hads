@@ -17,14 +17,14 @@
         <br />
         <asp:Label ID="Label1" runat="server" Text="Nombre de Usuario"></asp:Label>
 &nbsp;&nbsp; &nbsp;<asp:TextBox ID="usuario" runat="server"></asp:TextBox>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox2" ErrorMessage="Error... Introduce el nombre de usuario" Font-Bold="False" ForeColor="#CC0000"></asp:RequiredFieldValidator>
-        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Error... El nombre de usuario debe contener entre 6 y 20 caracteres" ValidationExpression="[a-zA-Z0-9]{6,20}" ForeColor="#CC0000"></asp:RegularExpressionValidator>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="usuario" ErrorMessage="Error... Introduce el nombre de usuario" Font-Bold="False" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="usuario" ErrorMessage="Error... El nombre de usuario debe contener entre 6 y 20 caracteres" ValidationExpression="[a-zA-Z0-9]{6,20}" ForeColor="#CC0000"></asp:RegularExpressionValidator>
         <br />
         <asp:Label ID="Label2" runat="server" Text="Contraseña"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="pass" runat="server"></asp:TextBox>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox1" ErrorMessage="Error... Introduce la contraseña" ForeColor="#CC0000"></asp:RequiredFieldValidator>
-        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Error... La contraseña debe contener entre 6 y 20 caracteres" ValidationExpression="[a-zA-Z0-9]{6,20}" ForeColor="#CC0000"></asp:RegularExpressionValidator>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="pass" ErrorMessage="Error... Introduce la contraseña" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="pass" ErrorMessage="Error... La contraseña debe contener entre 6 y 20 caracteres" ValidationExpression="[a-zA-Z0-9]{6,20}" ForeColor="#CC0000"></asp:RegularExpressionValidator>
         <br />
         <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

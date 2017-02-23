@@ -6,23 +6,7 @@ WebApplication1
 </name>
 </assembly>
 <members>
-<member name="F:WebApplication1.WebForm1.Head1">
-	<summary>
-Control Head1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:WebApplication1.WebForm1.form1">
-	<summary>
-Control form1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:WebApplication1.cambiarpass.form1">
+<member name="F:WebApplication1.cambiarpass.form1">
 	<summary>
 Control form1.
 </summary>
@@ -233,6 +217,22 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </member><member name="F:WebApplication1.confirmacion.inicio">
 	<summary>
 Control inicio.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.principal.Head1">
+	<summary>
+Control Head1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.principal.form1">
+	<summary>
+Control form1.
 </summary>
 	<remarks>
 Campo generado automáticamente.

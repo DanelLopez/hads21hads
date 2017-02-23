@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="principal.aspx.vb" Inherits="WebApplication1.WebForm1" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="principal.aspx.vb" Inherits="WebApplication1.principal" %>
 
 <!DOCTYPE html>
 
