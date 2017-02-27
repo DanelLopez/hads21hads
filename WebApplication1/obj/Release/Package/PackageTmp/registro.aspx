@@ -26,7 +26,6 @@
         <asp:TextBox ID="Nombre" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="RequiredFieldValidator" ControlToValidate="Nombre" ForeColor="Red">* Necesario Nombre</asp:RequiredFieldValidator>
         <br />
-        <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ErrorMessage="RegularExpressionValidator" ControlToValidate="Nombre" ValidationExpression="[A-Za-z0-9]{6,20}" ForeColor="Red">* Usuario entre 6 y 20 caracteres</asp:RegularExpressionValidator>
         <br />
         <br />
         Apellidos:

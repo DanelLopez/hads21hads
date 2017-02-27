@@ -160,13 +160,7 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
-    <None Include="My Project\PublishProfiles\hads21hads - FTP %282%29.pubxml" />
-    <None Include="My Project\PublishProfiles\hads21hads - FTP %283%29.pubxml" />
-    <None Include="My Project\PublishProfiles\hads21hads - FTP %284%29.pubxml" />
     <None Include="My Project\PublishProfiles\hads21hads - FTP.pubxml" />
-    <None Include="My Project\PublishProfiles\hads21hads - Web Deploy %282%29.pubxml" />
-    <None Include="My Project\PublishProfiles\hads21hads - Web Deploy %283%29.pubxml" />
-    <None Include="My Project\PublishProfiles\hads21hads - Web Deploy %284%29.pubxml" />
     <None Include="My Project\PublishProfiles\hads21hads - Web Deploy.pubxml" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -178,6 +172,7 @@
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -186,6 +181,7 @@
       <Name>LibreriaClases</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

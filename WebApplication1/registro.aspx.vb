@@ -16,9 +16,11 @@ Public Class registro
         Dim enlace As String
         Randomize()
         NumConf = CLng(Rnd() * 9000000) + 1000000
-        'Enlace = "http://localhost:50139/confirmacion.aspx?"
-        enlace = "http://hads21hads.azurewebsites.net/confirmar.aspx?"
-        enlace = enlace + "mbr=" + Correo.Text + "&numconf=" & NumConf
+        'enlace = "http://localhost:50139/confirmacion.aspx?"
+        'enlace = enlace + "mbr=" + Correo.Text + "&numconf=" & NumConf
+        'enlace = "http://hads21hads.azurewebsites.net/confirmacion.aspx?"
+        enlace = String.Concat("http://hads21hads.azurewebsites.net/confirmacion.aspx?mbr=", Correo.Text, "&numconf=", CStr(NumConf))
+
         result = insertar(Correo.Text, Nombre.Text, Apellidos.Text, Pregunta.Text, Respuesta.Text, DNI.Text, NumConf, 0, Nombre.Text, Nombre.Text, Contraseña.Text)
         enviarEmail(Correo.Text, enlace)
         Response.Redirect("inicio.aspx")
@@ -37,11 +39,11 @@ Public Class registro
     Public Function enviarEmail(ByVal email As String, ByVal enlace As String) As Boolean
         Try
             'Direccion de origen
-            Dim from_address As New MailAddress("danel.gramity@gmail.com", "hads21")
+            Dim from_address As New MailAddress("hads21hads@gmail.com", "hads21")
             'Direccion de destino
             Dim to_address As New MailAddress(email)
             'Password de la cuenta
-            Dim from_pass As String = "theisrabla"
+            Dim from_pass As String = "PerroPerro1"
             'Objeto para el cliente smtp
             Dim smtp As New SmtpClient
             'Host en este caso el servidor de gmail
@@ -57,7 +59,7 @@ Public Class registro
             'Creamos el mensaje con los parametros de origen y destino
             Dim message As New MailMessage(from_address, to_address)
             'Añadimos el asunto
-            message.Subject = "subject"
+            message.Subject = "confirmacion registro"
             'Concatenamos el cuerpo del mensaje a la plantilla
             message.Body = "<html><head></head><body>" + enlace + "</body></html>"
             'Definimos el cuerpo como html para poder escojer mejor como lo mandamos

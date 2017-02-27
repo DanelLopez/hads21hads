@@ -17,12 +17,12 @@ Public Class incio
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
         Dim result As String
-        result = obtenerdatos(usuario.Text, pass.Text)
+        result = comprobarUsuario(usuario.Text, pass.Text)
 
-        If result = "OK" Then
+        If result Then
             Response.Redirect("principal.aspx")
         Else
-            MsgBox("Error... No existe un usuario con ese nombre de usuario y/ contraseña")
+            MsgBox("Error...datos incorrectos")
         End If
     End Sub
 

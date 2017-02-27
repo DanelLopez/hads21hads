@@ -278,14 +278,6 @@ Control RequiredFieldValidator1.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.incio.RegularExpressionValidator2">
-	<summary>
-Control RegularExpressionValidator2.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
 </member><member name="F:WebApplication1.incio.Label2">
 	<summary>
 Control Label2.
@@ -426,14 +418,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </member><member name="F:WebApplication1.registro.RequiredFieldValidator2">
 	<summary>
 Control RequiredFieldValidator2.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:WebApplication1.registro.RegularExpressionValidator3">
-	<summary>
-Control RegularExpressionValidator3.
 </summary>
 	<remarks>
 Campo generado automáticamente.

@@ -15,10 +15,9 @@
         <br />
         <br />
         <br />
-        <asp:Label ID="Label1" runat="server" Text="Nombre de Usuario"></asp:Label>
+        <asp:Label ID="Label1" runat="server" Text="Direccion de correo"></asp:Label>
 &nbsp;&nbsp; &nbsp;<asp:TextBox ID="usuario" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="usuario" ErrorMessage="Error... Introduce el nombre de usuario" Font-Bold="False" ForeColor="#CC0000"></asp:RequiredFieldValidator>
-        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="usuario" ErrorMessage="Error... El nombre de usuario debe contener entre 6 y 20 caracteres" ValidationExpression="[a-zA-Z0-9]{6,20}" ForeColor="#CC0000"></asp:RegularExpressionValidator>
         <br />
         <asp:Label ID="Label2" runat="server" Text="Contraseña"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

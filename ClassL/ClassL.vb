@@ -25,25 +25,6 @@ Public Class accesodatosSQL
             Return ex.Message
         End Try
         Return (numregs & " registro(s) insertado(s) en la BD ")
-    End Function
-    Public Shared Function obtenerdatos(ByVal usuario As String, ByVal pass As String) As String
-
-        Dim num As SqlDataReader
-        Dim st = "select * from Usuarios where nombre='" & usuario & " ' and pass='" & pass & "' "
-        comando = New SqlCommand(st, conexion)
-
-        Try
-            num = comando.ExecuteReader()
-        Catch ex As Exception
-            Return ex.Message
-        End Try
-
-        If (num.HasRows) Then
-            Return "OK"
-        Else
-            Return "FALLO"
-        End If
-
     End Function
 
     Public Shared Function cambiarContraseña(ByVal pass As String, ByVal correo As String) As Integer
@@ -60,33 +41,25 @@ Public Class accesodatosSQL
 
     End Function
 
-    Public Shared Function buscarPregunta(ByVal correo As String) As Integer
-        Dim s As Integer
-        Dim st = "Select pregunta From Usuarios Where email='" & correo & "'"
+    Public Shared Function estaConfirmado(ByVal correo As String) As String
+        Dim num As SqlDataReader
+        Dim st = "Select * From Usuarios Where email='" & correo & "' AND confirmado=1"
+        comando = New SqlCommand(st, conexion)
+
         Try
-            comando = New SqlCommand(st, conexion)
-            s = comando.ExecuteNonQuery()
+            num = comando.ExecuteReader()
         Catch ex As Exception
-            Return 0
+            Return ex.Message
         End Try
 
-        Return s
+        If (num.HasRows) Then
+            Return "OK"
+        Else
+            Return "FALLO"
+        End If
 
     End Function
 
-    Public Shared Function buscarRespuesta(ByVal correo As String) As Integer
-        Dim s As Integer
-        Dim st = "Select respuesta From Usuarios Where email='" & correo & "'"
-        Try
-            comando = New SqlCommand(st, conexion)
-            s = comando.ExecuteNonQuery()
-        Catch ex As Exception
-            Return 0
-        End Try
-
-        Return s
-
-    End Function
 
 
     Public Shared Function setConfirmacion(ByVal email As String, ByVal num As Integer) As Integer
@@ -103,6 +76,18 @@ Public Class accesodatosSQL
 
     End Function
 
+
+    Public Shared Function comprobarUsuario(ByVal email As String, ByVal password As String) As Boolean
+        Dim st = "select count(*) from Usuarios where email='" & email & "' AND pass='" & password & "'AND confirmado='" & True & "'"
+
+        comando = New SqlCommand(st, conexion)
+
+        If comando.ExecuteScalar() = 1 Then
+            Return True
+        Else
+            Return False
+        End If
+    End Function
 
     Public Shared Sub cerrarconexion()
         conexion.Close()
