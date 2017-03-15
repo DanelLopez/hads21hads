@@ -17,13 +17,19 @@ Public Class incio
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
         Dim result As String
+        Dim resultado As String
         result = comprobarUsuario(usuario.Text, pass.Text)
+        resultado = tipoUsuario(usuario.Text)
 
-        If result Then
-            Response.Redirect("principal.aspx")
-        Else
-            MsgBox("Error...datos incorrectos")
-        End If
+            If result And resultado = "P" Then
+            Session("UserID") = usuario.Text()
+            Response.Redirect("Profesor.aspx")
+        ElseIf result And resultado = "A" Then
+            Session("UserID") = usuario.Text
+            Response.Redirect("Alumno.aspx")
+            Else
+                MsgBox("Error...datos incorrectos")
+            End If
     End Sub
 
 End Class

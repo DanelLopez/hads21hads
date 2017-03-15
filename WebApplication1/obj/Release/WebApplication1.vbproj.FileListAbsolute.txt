@@ -10,3 +10,9 @@ C:\Users\Usuario\Documents\Visual Studio 2012\Projects\HADS21\WebApplication1\We
 C:\Users\Usuario\Documents\Visual Studio 2012\Projects\HADS21\WebApplication1\WebApplication1\obj\Release\WebApplication1.dll
 C:\Users\Usuario\Documents\Visual Studio 2012\Projects\HADS21\WebApplication1\WebApplication1\obj\Release\WebApplication1.xml
 C:\Users\Usuario\Documents\Visual Studio 2012\Projects\HADS21\WebApplication1\WebApplication1\obj\Release\WebApplication1.pdb
+C:\Users\Usuario\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\obj\Release\WebApplication1.vbprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\obj\Release\WebApplication1.Resources.resources
+C:\Users\Usuario\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\obj\Release\WebApplication1.vbproj.GenerateResource.Cache
+C:\Users\Usuario\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\obj\Release\WebApplication1.dll
+C:\Users\Usuario\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\obj\Release\WebApplication1.xml
+C:\Users\Usuario\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\obj\Release\WebApplication1.pdb

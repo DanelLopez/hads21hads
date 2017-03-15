@@ -89,6 +89,21 @@ Public Class accesodatosSQL
         End If
     End Function
 
+    Public Shared Function tipoUsuario(ByVal email As String) As String
+        Dim reader As SqlDataReader
+        Dim st = "select tipo from Usuarios where email='" & email & "'"
+
+        comando = New SqlCommand(st, conexion)
+        reader = comando.ExecuteReader()
+
+        If reader.Read Then
+            Return reader("tipo")
+        Else
+            Return False
+        End If
+
+    End Function
+
     Public Shared Sub cerrarconexion()
         conexion.Close()
     End Sub
