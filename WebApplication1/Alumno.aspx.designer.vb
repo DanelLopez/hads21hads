@@ -32,15 +32,6 @@ Partial Public Class Alumno
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
-    '''Control LabelUser.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents LabelUser As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
     '''Control LinkButton2.
     '''</summary>
     '''<remarks>
@@ -57,4 +48,13 @@ Partial Public Class Alumno
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents LinkButton1 As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Control LabelUser.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents LabelUser As Global.System.Web.UI.WebControls.Label
 End Class

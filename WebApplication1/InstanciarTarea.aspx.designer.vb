@@ -32,6 +32,15 @@ Partial Public Class InstanciarTarea
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
+    '''Control LabelUser.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents LabelUser As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''Control LinkButtonCerrarSesion.
     '''</summary>
     '''<remarks>

@@ -29,8 +29,8 @@
         <asp:Button ID="Button1" runat="server" Text="Iniciar Sesión" Width="200px" Height="45px" />
         <br />
         <br />
-        <asp:LinkButton ID="LinkButton1" runat="server" BorderStyle="None" CausesValidation="False" PostBackUrl="~/registro.aspx">Registrarse</asp:LinkButton>
-        <asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" PostBackUrl="~/cambiarpass.aspx">Recuperar Contraseña</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton1" runat="server" BorderStyle="None" CausesValidation="False" PostBackUrl="registro.aspx">Registrarse</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" PostBackUrl="cambiarpass.aspx">Recuperar Contraseña</asp:LinkButton>
     </div>
     </form>
 

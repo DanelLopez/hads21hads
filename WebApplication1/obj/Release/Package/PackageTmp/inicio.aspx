@@ -23,15 +23,14 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="pass" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="pass" ErrorMessage="Error... Introduce la contraseña" ForeColor="#CC0000"></asp:RequiredFieldValidator>
-        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="pass" ErrorMessage="Error... La contraseña debe contener entre 6 y 20 caracteres" ValidationExpression="[a-zA-Z0-9]{6,20}" ForeColor="#CC0000"></asp:RegularExpressionValidator>
         <br />
         <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="Button1" runat="server" Text="Iniciar Sesión" Width="200px" Height="45px" />
         <br />
         <br />
-        <asp:LinkButton ID="LinkButton1" runat="server" BorderStyle="None" CausesValidation="False" PostBackUrl="~/registro.aspx">Registrarse</asp:LinkButton>
-        <asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" PostBackUrl="~/cambiarpass.aspx">Recuperar Contraseña</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton1" runat="server" BorderStyle="None" CausesValidation="False" PostBackUrl="registro.aspx">Registrarse</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" PostBackUrl="cambiarpass.aspx">Recuperar Contraseña</asp:LinkButton>
     </div>
     </form>
 

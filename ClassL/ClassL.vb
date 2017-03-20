@@ -15,6 +15,10 @@ Public Class accesodatosSQL
         Return "CONEXION OK"
     End Function
 
+    Public Shared Sub cerrarconexion()
+        conexion.Close()
+    End Sub
+
     Public Shared Function insertar(ByVal email As String, ByVal nombre As String, ByVal apellidos As String, ByVal pregunta As String, ByVal respuesta As String, ByVal dni As String, ByVal numconfir As Integer, ByVal comfirmado As String, ByVal grupo As String, ByVal tipo As String, ByVal pass As String) As String
         Dim st = "insert into Usuarios  values ('" & email & " ', '" & nombre & " ', '" & apellidos & " ', '" & pregunta & " ', '" & respuesta & " ','" & dni & " ','" & numconfir & " ', '" & comfirmado & " ', '" & grupo & " ', '" & tipo & " ', '" & pass & " ')"
         Dim numregs As Integer
@@ -87,6 +91,7 @@ Public Class accesodatosSQL
         Else
             Return False
         End If
+
     End Function
 
     Public Shared Function tipoUsuario(ByVal email As String) As String
@@ -103,10 +108,5 @@ Public Class accesodatosSQL
         End If
 
     End Function
-
-    Public Shared Sub cerrarconexion()
-        conexion.Close()
-    End Sub
-
 
 End Class
